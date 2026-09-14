@@ -1,0 +1,16 @@
+{
+  "name": "motion-study",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Four interactive interface studies inspired by Viktor Oddy's design walkthrough.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "check": "node --check dist/app.js && node scripts/check.mjs",
+    "build": "npm run check"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
