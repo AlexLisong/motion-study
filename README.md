@@ -2,6 +2,8 @@
 
 Four interactive UI studies inspired by [Viktor Oddy’s design walkthrough](https://x.com/viktoroddy/status/2099488750283923775). A browsable gallery, four distinct visual worlds, and working interactions — built with HTML, CSS, and JavaScript.
 
+**[Explore the live collection →](https://motion.whyjs.com)**
+
 ![Motion Study gallery](docs/screenshots/gallery.webp)
 
 ## Explore
@@ -70,3 +72,5 @@ Design inspiration: **Viktor Oddy / MotionSites**. This is an independent study,
 The [MIT license](LICENSE) covers the original application code and favicon. **Reference-derived videos, posters, and the artwork appearing in screenshots are excluded from that license** and remain subject to their owners’ rights. The source recording did not establish a general redistribution or commercial-use license for that artwork. See [reference and asset credits](docs/reference.md) before reuse. Fonts retain their included SIL Open Font Licenses.
 
 See [verification notes](docs/verification.md) for the checks performed.
+
+Hosted on AWS alongside Grove. See [deployment and rollback instructions](docs/aws.md).

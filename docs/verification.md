@@ -30,4 +30,18 @@ Independent code review identified and verified fixes for local video byte range
 - Dynamic OS reduced-motion changes were code-reviewed; the user’s system settings were not changed to test them.
 - Keel uses a static reference crop with parallax; the original Keel animation was unavailable.
 - No checkout, real event workflow, external database, or persistent cart is implemented or implied.
-- This delivery publishes source to GitHub; it does not configure a hosted production site.
+- AWS hosting was added in the follow-up deployment below.
+
+## AWS follow-up
+
+Live at **https://motion.whyjs.com** using the `lighthouse` AWS CLI profile and the existing Grove server.
+
+- Release `20260914T225744Z-b07401739e82`, application source `b07401739e8203a55b6e0b606fa0a2ca6980a8eb`.
+- All 15 deployed public files matched their SHA-256 manifest over HTTPS.
+- Gallery and all four study URLs returned HTTP 200. Video Range request returned HTTP 206 with exactly the requested two bytes.
+- Chrome rendered the public gallery. Next Move video loaded with its full 9.04-second seekable duration; scrolling advanced it past 8 seconds, and the product dialog opened correctly.
+- nginx configuration validation passed. HTTPS certificate renewal uses the existing Certbot timer.
+- Grove, Forest, and Bonrock returned HTTP 200 after deployment.
+- Deployment script review fixes cover bounded health checks, rollback error handling, unique activation symlinks, and cleanup preserving the deployment result.
+
+See [AWS operations](aws.md) for redeployment and rollback.

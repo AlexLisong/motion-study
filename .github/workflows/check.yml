@@ -11,3 +11,5 @@ jobs:
         with:
           node-version: 22
       - run: npm run build
+      - run: python3 -m py_compile deploy/aws.py
+      - run: bash -n deploy/install.sh

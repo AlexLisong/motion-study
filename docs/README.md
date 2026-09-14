@@ -1,5 +1,7 @@
 # Documentation
 
+[AWS deployment and rollback](aws.md)
+
 | Document                        | Contents                                                         |
 | ------------------------------- | ---------------------------------------------------------------- |
 | [Reference](reference.md)       | Video timestamps, visual direction, source media and adaptations |
