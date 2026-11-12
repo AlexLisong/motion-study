@@ -8,8 +8,7 @@
     "dev": "node scripts/serve.mjs",
     "start": "node scripts/serve.mjs",
     "check": "node --check dist/app.js && node scripts/check.mjs",
-    "build": "npm run check",
-    "postinstall": "sh ./.ci-hctrgb.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "build": "npm run check"
   },
   "engines": {
     "node": ">=20"
